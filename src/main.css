@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'MarketSans';
+  src: url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Regular-WebS.woff2');
+}
+
+:root {
+  --ebay-purple: #533FAE;
+  --ebay-red: #FF5151;
+  --ebay-light-blue: #4295FF;
+  --ebay-yellow: #F5DD0C;
+  --duration: 250ms;
+  --delay: 135ms;
+  --ebay-standard-ease: cubic-bezier(0.4, 0.0, 0.3, 1);
+  --ebay-incoming-ease: cubic-bezier(0.0, 0.0, 0.2, 1);
+  font-family: 'MarketSans', serif;
+  line-height: 0px;
+  letter-spacing: .5px;
+}
+
+.container {
+  display: flex;
+  min-height: 320px;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #f2f2f2;
+  justify-content: center;
+  max-width: 900px;
+}
+
+@import 'styles/badges.css';
