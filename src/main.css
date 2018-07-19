@@ -6,8 +6,10 @@
 :root {
   --ebay-purple: #533FAE;
   --ebay-red: #FF5151;
+   --ebay-blue: #3665F3;
   --ebay-light-blue: #4295FF;
   --ebay-yellow: #F5DD0C;
+  --ebay-green: #ACCF02;
   --duration: 250ms;
   --delay: 135ms;
   --ebay-standard-ease: cubic-bezier(0.4, 0.0, 0.3, 1);
