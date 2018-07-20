@@ -1,7 +1,11 @@
+:root {
+  --initPriceWidth: 0px;
+}
+
 
 .price-drop {
   height: auto;
-  padding: 0 10px;
+  padding: 0 6px;
   width: auto;
   text-align: center;
   position: relative;
@@ -10,19 +14,15 @@
   justify-content: center;
 }
 
-.label {
-
-}
-.init {
+.initial {
   margin:auto;
-  width: 100%;
+  padding: 0px 5px;
 }
 
-.init-price {
+.initial-price-container {
   position: absolute;
-  margin:auto;
-  width: 100%;
-  transform-origin: top;
+  margin: auto 5px;
+  transform-origin: right;
   animation: slide-to-right-and-scale-down calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*5) both;
 }
 

@@ -14,5 +14,5 @@ storiesOf('Badge', module)
   .add('watching badge', () => <Badge theme="watching" value="50人正在浏览"></Badge>);
 
 storiesOf('Price Drop', module)
-  .add('strike through', () => <PriceDrop initialPrice="45.99" newPrice="39.99"></PriceDrop>);
+  .add('strike through', () => <PriceDrop initialPrice="￥1360" newPrice="￥1260"></PriceDrop>);
 
