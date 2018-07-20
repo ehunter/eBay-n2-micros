@@ -31,16 +31,17 @@
     opacity: 0;
   }
   to {
-    transform: translate(0%, 0%);
+    transform: translate(0);
     opacity: 1;
   }
 }
 
-@keyframes slide-to-right {
+@keyframes slide-to-right-and-scale-down {
   from {
-    transform: translate(0%, 0%);
+    transform: translate(0) scale(1, 1);
   }
   to {
-    transform: translate(100%, 100%);
+    transform: translate(56px, 4px) scale(.5, .5);
+    opacity: .6;
   }
 }

@@ -22,7 +22,8 @@
   position: absolute;
   margin:auto;
   width: 100%;
-  animation: slide-to-right calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*5) both;
+  transform-origin: top;
+  animation: slide-to-right-and-scale-down calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*5) both;
 }
 
 .price {
@@ -41,7 +42,7 @@
 
 .stripe {
   width: 100%;
-  height: 3px;
+  height: 4px;
   text-align:center;
   position: absolute;
   margin:auto;
