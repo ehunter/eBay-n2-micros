@@ -1,0 +1,29 @@
+.cart {
+  height: auto;
+  width: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stripes.centered {
+	display: flex;
+	align-items: center;
+}
+
+.stripe.med {
+		height: 20px;
+}
+
+.cart-circle {
+	border-radius: 100px;
+	background-color: var(--ebay-yellow);
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 10;
+}

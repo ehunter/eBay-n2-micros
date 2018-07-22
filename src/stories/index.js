@@ -7,6 +7,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import Badge from '../components/Badge';
 import PriceDrop from '../components/PriceDrop';
+import Cart from '../components/Cart';
 
 
 storiesOf('Badge', module)
@@ -16,3 +17,5 @@ storiesOf('Badge', module)
 storiesOf('Price Drop', module)
   .add('strike through', () => <PriceDrop initialPrice="￥1360" newPrice="￥1260"></PriceDrop>);
 
+  storiesOf('Cart', module)
+  .add('cart', () => <Cart count="2"></Cart>);
