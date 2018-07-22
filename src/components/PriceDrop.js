@@ -13,10 +13,14 @@ class PriceDrop extends Component {
 
   componentDidMount() {
     // we need the width of the new price element to determine
-    // how far the old price should
+    // the Y position for the old price to animate to.
     var amountToSlideRight = 
       window.getComputedStyle(ReactDOM.findDOMNode(this.refs.newestPrice)).width;
     document.documentElement.style.setProperty('--initPriceWidth', amountToSlideRight);
+    // now find the old price and add the animation class
+    var container  = document.getElementById('initialPriceContainer')
+    container.classList.add("initial-price-container");
+
   }
 
   render() {
@@ -25,7 +29,7 @@ class PriceDrop extends Component {
       <div class="container">
         <div id="price-drop" class="price-drop">
         <p class="price new" ref="newestPrice">{this.props.newPrice}</p>
-          <div class="initial-price-container">
+          <div id="initialPriceContainer">
             <p class="price initial">{this.props.initialPrice}</p>
             <div class="stripes">
               <div class="stripe"></div>
