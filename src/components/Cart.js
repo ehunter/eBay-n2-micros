@@ -19,16 +19,16 @@ class Cart extends Component {
     return (
       <div class="container">
         <div id="cart" class="cart">
-        <p class="badge-label">{this.props.value}</p>
-            <div class="cart-circle"></div>
-        <img src={cartIcon} />
-            <div class="stripes centered">
-              <div class="stripe med"></div>
-              <div class="stripe med"></div>
-              <div class="stripe med"></div>
-              <div class="stripe med"></div>
-            </div>
-        </div> 
+          <p class="badge-label">{this.props.value}</p>
+          <div class="cart-circle"></div>
+          <img src={cartIcon} />
+          <div class="clip-me">
+            <div class="strip med"></div>
+            <div class="strip med"></div>
+            <div class="strip med"></div>
+          </div>
+        </div>
+        
       </div>
     );
   }

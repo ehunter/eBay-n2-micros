@@ -45,3 +45,12 @@
     opacity: .6;
   }
 }
+
+@keyframes slide-from-left {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 0%);
+  }
+}
