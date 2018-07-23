@@ -14,6 +14,7 @@
   --delay: 135ms;
   --ebay-standard-ease: cubic-bezier(0.4, 0.0, 0.3, 1);
   --ebay-incoming-ease: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ebay-bounce-ease: cubic-bezier(0.175, 0.885, 0.22, 1.575);
   font-family: 'MarketSans', serif;
   line-height: 0px;
   letter-spacing: .5px;
@@ -27,6 +28,20 @@
   background-color: #f2f2f2;
   justify-content: center;
   max-width: 900px;
+  position: relative;
+}
+
+.btn {
+  font-family: 'MarketSans', serif;
+  letter-spacing: .25px;
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  padding: 12px 21px;
+  background: var(--ebay-red);
+  text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 
 @import 'styles/animations.css';

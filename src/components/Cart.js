@@ -8,27 +8,31 @@ import '../main.css';
 class Cart extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+        active: false,
+        itemCount: 1
+    };
+    this.updateCart = this.updateCart.bind(this);
   }
-  render() {
+  updateCart() {
+      const currentState = this.state.active;
+      this.setState({ active: !currentState, itemCount: itemCount++ });
+  };
 
-    var badgeBgClass = classNames('badge-bg', this.props.className, {
-      'discount': this.props.theme == "discount",
-      'watching': this.props.theme == "watching"
-    });
+  render() {
 
     return (
       <div class="container">
         <div id="cart" class="cart">
-          <p class="badge-label">{this.props.value}</p>
-          <div class="cart-circle"></div>
-          <img src={cartIcon} />
-          <div class="clip-me">
-            <div class="strip med"></div>
-            <div class="strip med"></div>
-            <div class="strip med"></div>
+          <div class="cart-circle">{this.state.itemCount}</div>
+            <img src={cartIcon} class="cart-icon"/>
+            <div class="cart-clipping-mask">
+              <div class="cart-stripe"></div>
+              <div class="cart-stripe"></div>
+              <div class="cart-stripe"></div>
+            </div>
           </div>
-        </div>
-        
+          <button id="add-to-cart" class="btn add-to-cart" onclick={this.updateCart}>ADD TO CART</button>
       </div>
     );
   }

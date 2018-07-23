@@ -18,4 +18,4 @@ storiesOf('Price Drop', module)
   .add('strike through', () => <PriceDrop initialPrice="￥1360" newPrice="￥1260"></PriceDrop>);
 
   storiesOf('Cart', module)
-  .add('cart', () => <Cart count="2"></Cart>);
+  .add('cart', () => <Cart itemCount="1"></Cart>);
