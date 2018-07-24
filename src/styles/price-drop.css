@@ -23,7 +23,7 @@
   position: absolute;
   margin: auto 5px;
   transform-origin: right;
-  animation: slide-to-right-and-scale-down calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*5) both;
+  animation: slide-to-right-and-scale-down calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*4.5) both;
 }
 
 .price {
@@ -32,7 +32,7 @@
 }
 
 .new {
-  animation: slide-and-fade-in-from-left calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*5) both;
+  animation: slide-and-fade-in-from-left calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*4.5) both;
 }
 
 .stripes {

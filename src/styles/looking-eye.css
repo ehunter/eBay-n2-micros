@@ -1,5 +1,6 @@
-p.eye {
+p.eye-count {
   font-size: 16px;
   color: var(--ebay-red);
   padding-top: 4px;
+  animation: slide-and-fade-in-from-bottom  calc(var(--duration)*1.2) var(--ebay-standard-ease) calc(var(--delay)*4) both;
 }

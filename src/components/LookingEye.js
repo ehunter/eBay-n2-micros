@@ -38,7 +38,7 @@ class LookingEye extends Component {
     return (
       <div className="container">
         <div style={{width: 55, height: 65}} ref={(animationDiv) => { this.animationContainer = animationDiv; }} />
-        <p className="eye">{this.props.lookingCount}</p>
+        <p className="eye-count">{this.props.lookingCount}</p>
       </div>
     );
   }
