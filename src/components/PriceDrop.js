@@ -24,7 +24,6 @@ class PriceDrop extends Component {
   }
 
   render() {
-
     return (
       <div className="container">
         <div id="price-drop" className="price-drop">
