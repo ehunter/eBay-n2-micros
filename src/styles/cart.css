@@ -11,13 +11,13 @@
 .cart-clipping-mask {
 	height: 100%;
 	width: 100%;
-	padding-top: 7px;
+	padding-top: 10px;
 	text-align: center;
 	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	-webkit-clip-path: polygon(0 0, 100% 0, 84% 77%, 21% 77%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 80% 65%, 37% 65%);
 	clip-path: polygon(0 0, 100% 0, 80% 65%, 37% 65%);
 	z-index: 4;
 }
@@ -42,7 +42,7 @@
     background-color: var(--ebay-red);
     font: 8px sans-serif;
 	color: white;
-	animation: scale-in calc(var(--duration)*1.5) var(--ebay-bounce-ease) .75s both;
+	animation: scale-in calc(var(--duration)*1.25) var(--ebay-bounce-ease) .75s both;
 }
 
 .cart-icon {

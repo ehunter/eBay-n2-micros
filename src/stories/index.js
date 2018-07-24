@@ -3,12 +3,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import { withKnobs, number } from '@storybook/addon-knobs/react';
 
 
 import Badge from '../components/Badge';
 import PriceDrop from '../components/PriceDrop';
 import Cart from '../components/Cart';
-
 
 storiesOf('Badge', module)
   .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
@@ -17,5 +17,7 @@ storiesOf('Badge', module)
 storiesOf('Price Drop', module)
   .add('strike through', () => <PriceDrop initialPrice="￥1360" newPrice="￥1260"></PriceDrop>);
 
-  storiesOf('Cart', module)
-  .add('cart', () => <Cart itemCount="1"></Cart>);
+const cartStories = storiesOf('Cart', module);
+
+cartStories.addDecorator(withKnobs);
+cartStories.add('cart', () => <Cart itemCount={number('itemCount', 1)}></Cart>);

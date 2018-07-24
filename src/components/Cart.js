@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { number } from '@storybook/addon-knobs/react';
 import classNames from 'classnames';
 import cartIcon from '../assets/icn_cart.svg';
 
@@ -8,31 +9,37 @@ import '../main.css';
 class Cart extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-        active: false,
-        itemCount: 1
-    };
-    this.updateCart = this.updateCart.bind(this);
   }
-  updateCart() {
-      const currentState = this.state.active;
-      this.setState({ active: !currentState, itemCount: itemCount++ });
-  };
+
+  componentDidUpdate(prevProps) {
+      var stripes  = document.getElementsByClassName('cart-stripe');
+      var i = stripes.length;
+      var circle = document.getElementById('cart-circle');
+
+      while(i--) {
+        stripes[i].style.animation = 'none';
+        stripes[i].offsetHeight;
+        stripes[i].style.animation = null; 
+      }
+
+      circle.style.animation = 'none';
+      circle.offsetHeight;
+      circle.style.animation = "scale-up calc(var(--duration)*1.25) var(--ebay-bounce-ease) .65s both"; 
+  }
 
   render() {
 
     return (
-      <div class="container">
-        <div id="cart" class="cart">
-          <div class="cart-circle">{this.state.itemCount}</div>
-            <img src={cartIcon} class="cart-icon"/>
-            <div class="cart-clipping-mask">
-              <div class="cart-stripe"></div>
-              <div class="cart-stripe"></div>
-              <div class="cart-stripe"></div>
+      <div className="container">
+        <div id="cart" className="cart">
+          <div id="cart-circle" className="cart-circle">{this.props.itemCount}</div>
+            <img src={cartIcon} className="cart-icon"/>
+            <div className="cart-clipping-mask">
+              <div className="cart-stripe"></div>
+              <div className="cart-stripe"></div>
+              <div className="cart-stripe"></div>
             </div>
           </div>
-          <button id="add-to-cart" class="btn add-to-cart" onclick={this.updateCart}>ADD TO CART</button>
       </div>
     );
   }
