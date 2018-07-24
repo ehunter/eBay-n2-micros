@@ -12,9 +12,13 @@ class Cart extends Component {
   }
 
   componentDidUpdate(prevProps) {
-      var stripes  = document.getElementsByClassName('cart-stripe');
-      var i = stripes.length;
-      var circle = document.getElementById('cart-circle');
+    var stripes  = document.getElementsByClassName('cart-stripe');
+    var i = stripes.length;
+    var circle = document.getElementById('cart-circle');
+
+    if (this.props.itemCount != '0'
+        && this.props.itemCount !== null
+        && (this.props.itemCount !== prevProps.itemCount)) {
 
       while(i--) {
         stripes[i].style.animation = 'none';
@@ -26,6 +30,7 @@ class Cart extends Component {
       circle.offsetHeight;
       circle.style.animation = "scale-up calc(var(--duration)*1.25) var(--ebay-bounce-ease) .65s both"; 
   }
+}
 
   render() {
 
