@@ -24,4 +24,4 @@ cartStories.add('cart', () => <Cart itemCount={text('Items In Cart', 1)}></Cart>
 
 const lookingEyeStories = storiesOf('LookingEye', module);
 lookingEyeStories.addDecorator(withKnobs);
-lookingEyeStories.add('looking eye', () => <LookingEye lookingCount={text('Amount of Users Looking', 1)}></LookingEye>);
+lookingEyeStories.add('looking eye', () => <LookingEye lookingCount={text('Amount of Users Looking', 56)}></LookingEye>);
