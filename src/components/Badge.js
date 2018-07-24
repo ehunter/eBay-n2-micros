@@ -16,9 +16,9 @@ class Badge extends Component {
     });
 
     return (
-      <div class="container">
-        <div id="badge" class="badge">
-            <p class="badge-label">{this.props.value}</p>
+      <div className="container">
+        <div id="badge" className="badge">
+            <p className="badge-label">{this.props.value}</p>
             <div className={badgeBgClass}></div>
             {this.props.theme == "discount" &&
               <div className={badgeBgClass}></div>

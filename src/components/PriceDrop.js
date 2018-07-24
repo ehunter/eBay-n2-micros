@@ -26,16 +26,16 @@ class PriceDrop extends Component {
   render() {
 
     return (
-      <div class="container">
-        <div id="price-drop" class="price-drop">
-        <p class="price new" ref="newestPrice">{this.props.newPrice}</p>
+      <div className="container">
+        <div id="price-drop" className="price-drop">
+        <p className="price new" ref="newestPrice">{this.props.newPrice}</p>
           <div id="initialPriceContainer">
-            <p class="price initial">{this.props.initialPrice}</p>
-            <div class="stripes">
-              <div class="stripe"></div>
-              <div class="stripe"></div>
-              <div class="stripe"></div>
-              <div class="stripe"></div>
+            <p className="price initial">{this.props.initialPrice}</p>
+            <div className="stripes">
+              <div className="stripe"></div>
+              <div className="stripe"></div>
+              <div className="stripe"></div>
+              <div className="stripe"></div>
             </div>
           </div>
           </div>
