@@ -11,7 +11,7 @@
 .cart-clipping-mask {
 	height: 100%;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 7px;
 	text-align: center;
 	position: absolute;
 	display: flex;
@@ -33,20 +33,22 @@
 	right: -3px;
 	top: 0px;
 	z-index: 6;
-	border-radius: 50%;
+	border-radius: 25px;
 	display: flex;
     align-items: center;
     justify-content: center;
-    width: 12px;
-    height: 12px;
+    width: auto;
+    height: 6px;
+    padding: 4px;
     background-color: var(--ebay-red);
-    font: 8px sans-serif;
+    font: 9px sans-serif;
 	color: white;
 	animation: scale-in calc(var(--duration)*1.5) var(--ebay-bounce-ease) .75s both;
 }
 
 .cart-icon {
 	z-index: 5;
+	width: 40px;
 }
 
 .cart-stripe {
@@ -68,7 +70,7 @@
 }
 
 .cart-stripe:nth-child(3) {
-	animation-delay: calc(var(--delay)*3.);
+	animation-delay: calc(var(--delay)*3);
 	z-index: 3;
 	background-color: var(--ebay-red);
 }

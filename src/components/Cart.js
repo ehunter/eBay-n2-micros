@@ -28,7 +28,7 @@ class Cart extends Component {
 
       circle.style.animation = 'none';
       circle.offsetHeight;
-      circle.style.animation = "scale-up calc(var(--duration)*1.25) var(--ebay-bounce-ease) .65s both"; 
+      circle.style.animation = "scale-up-bounce calc(var(--duration)*1.25) var(--ebay-bounce-ease) .6s both"; 
   }
 }
 
