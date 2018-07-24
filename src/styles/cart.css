@@ -43,7 +43,7 @@
     background-color: var(--ebay-red);
     font: 9px sans-serif;
 	color: white;
-	animation: scale-in calc(var(--duration)*1.5) var(--ebay-bounce-ease) .75s both;
+	animation: scale-in calc(var(--duration)*1.25) var(--ebay-bounce-ease) .75s both;
 }
 
 .cart-icon {
