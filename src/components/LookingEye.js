@@ -11,8 +11,8 @@ class LookingEye extends Component {
     super(props);
     this.animationIsAttached = false;
     this.animation = null;
-    this.introFrames = [0, 30];
-    this.blinkFrames = [30, 70];
+    this.introFrames = [0, 35];
+    this.blinkFrames = [35, 70];
   }
 
 
