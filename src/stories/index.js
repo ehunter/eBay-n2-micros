@@ -23,10 +23,10 @@ const cartStories = storiesOf('Cart', module);
 cartStories.addDecorator(withKnobs);
 cartStories.add('cart', () => <Cart itemCount={text('Items In Cart', 1)}></Cart>);
 
-const lookingEyeStories = storiesOf('LookingEye', module);
+const lookingEyeStories = storiesOf('Looking Eye', module);
 lookingEyeStories.addDecorator(withKnobs);
 lookingEyeStories.add('looking eye', () => <LookingEye lookingCount={text('Amount of Users Looking', 56)}></LookingEye>);
 
-const priceAlertBellStories = storiesOf('PriceAlertBell', module);
+const priceAlertBellStories = storiesOf('Price Alert Bell', module);
 priceAlertBellStories.addDecorator(withKnobs);
 priceAlertBellStories.add('Price Alert Bell', () => <PriceAlertBell disabled={boolean('Disable Price Alerts', false)}></PriceAlertBell>);
