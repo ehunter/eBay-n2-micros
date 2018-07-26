@@ -13,6 +13,7 @@ import LookingEye from '../components/LookingEye';
 import PriceAlertBell from '../components/PriceAlertBell';
 import SellThroughBar from '../components/SellThroughBar';
 import ShareCouponHint from '../components/ShareCouponHint';
+import TruckAnimation from '../components/TruckAnimation';
 
 storiesOf('Badge', module)
   .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
@@ -36,6 +37,10 @@ priceAlertBellStories.add('Price Alert Bell', () => <PriceAlertBell enabled={boo
 const ShareCouponStories = storiesOf('Share Coupon Hint', module);
 ShareCouponStories.addDecorator(withKnobs);
 ShareCouponStories.add('Share Coupon Hint', () => <ShareCouponHint showHint={boolean('Show Hint Animation', false)}></ShareCouponHint>);
+
+const ShippingStories = storiesOf('Shipping Icon Animations', module);
+ShippingStories.addDecorator(withKnobs);
+ShippingStories.add('Truck Animation', () => <TruckAnimation shippingInfoComplete={boolean('Domestic Shipping Info Complete', false)}></TruckAnimation>);
 
 const sellThroughBar = storiesOf('Sell Through Bar', module);
 const label = 'Items Sold';
