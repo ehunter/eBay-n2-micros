@@ -12,6 +12,7 @@ import Cart from '../components/Cart';
 import LookingEye from '../components/LookingEye';
 import PriceAlertBell from '../components/PriceAlertBell';
 import SellThroughBar from '../components/SellThroughBar';
+import ShareCouponHint from '../components/ShareCouponHint';
 
 storiesOf('Badge', module)
   .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
@@ -30,7 +31,11 @@ lookingEyeStories.add('looking eye', () => <LookingEye lookingCount={text('Amoun
 
 const priceAlertBellStories = storiesOf('Price Alert Bell', module);
 priceAlertBellStories.addDecorator(withKnobs);
-priceAlertBellStories.add('Price Alert Bell', () => <PriceAlertBell disabled={boolean('Disable Price Alerts', false)}></PriceAlertBell>);
+priceAlertBellStories.add('Price Alert Bell', () => <PriceAlertBell enabled={boolean('Enable Price Alerts', false)}></PriceAlertBell>);
+
+const ShareCouponStories = storiesOf('Share Coupon Hint', module);
+ShareCouponStories.addDecorator(withKnobs);
+ShareCouponStories.add('Share Coupon Hint', () => <ShareCouponHint showHint={boolean('Show Hint Animation', false)}></ShareCouponHint>);
 
 const sellThroughBar = storiesOf('Sell Through Bar', module);
 const label = 'Items Sold';
