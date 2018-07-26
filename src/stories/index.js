@@ -14,6 +14,7 @@ import PriceAlertBell from '../components/PriceAlertBell';
 import SellThroughBar from '../components/SellThroughBar';
 import ShareCouponHint from '../components/ShareCouponHint';
 import TruckAnimation from '../components/TruckAnimation';
+import PlaneAnimation from '../components/PlaneAnimation';
 
 storiesOf('Badge', module)
   .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
@@ -38,9 +39,12 @@ const ShareCouponStories = storiesOf('Share Coupon Hint', module);
 ShareCouponStories.addDecorator(withKnobs);
 ShareCouponStories.add('Share Coupon Hint', () => <ShareCouponHint showHint={boolean('Show Hint Animation', false)}></ShareCouponHint>);
 
+
+/* These simple svg icons can be made much simpler by creating an animation component and passing properties (json file, speed, size, etc) */
 const ShippingStories = storiesOf('Shipping Icon Animations', module);
 ShippingStories.addDecorator(withKnobs);
 ShippingStories.add('Truck Animation', () => <TruckAnimation shippingInfoComplete={boolean('Domestic Shipping Info Complete', false)}></TruckAnimation>);
+ShippingStories.add('Plane Animation', () => <PlaneAnimation shippingInfoComplete={boolean('Freight Forwarding Complete', false)}></PlaneAnimation>);
 
 const sellThroughBar = storiesOf('Sell Through Bar', module);
 const label = 'Items Sold';
