@@ -23,11 +23,9 @@ class PriceAlertBell extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.disabled) {
-        // blink the eye
-        this.animation.playSegments(this.disabledFrames, true);
-    } else {
-      this.animation.playSegments(this.enabledFrames, true);
+    if (this.props.enabled != prevProps.enabled) {
+      var frames = this.props.enabled ? this.enabledFrames : this.disabledFrames;
+      this.animation.playSegments(frames, true);
     }
   }
 
