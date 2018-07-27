@@ -15,6 +15,7 @@ import SellThroughBar from '../components/SellThroughBar';
 import ShareCouponHint from '../components/ShareCouponHint';
 import TruckAnimation from '../components/TruckAnimation';
 import PlaneAnimation from '../components/PlaneAnimation';
+import ProductJourney from '../components/ProductJourney';
 
 storiesOf('Badge', module)
   .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
@@ -45,6 +46,7 @@ const ShippingStories = storiesOf('Shipping Icon Animations', module);
 ShippingStories.addDecorator(withKnobs);
 ShippingStories.add('Truck Animation', () => <TruckAnimation shippingInfoComplete={boolean('Domestic Shipping Info Complete', false)}></TruckAnimation>);
 ShippingStories.add('Plane Animation', () => <PlaneAnimation shippingInfoComplete={boolean('Freight Forwarding Complete', false)}></PlaneAnimation>);
+ShippingStories.add('Product Journey', () => <ProductJourney></ProductJourney>);
 
 const sellThroughBar = storiesOf('Sell Through Bar', module);
 const label = 'Items Sold';
