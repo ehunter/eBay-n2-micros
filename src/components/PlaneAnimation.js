@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { number } from '@storybook/addon-knobs/react';
 import bodymovin from 'bodymovin';
 import classNames from 'classnames';
 import animationData from '../assets/plane.json'
