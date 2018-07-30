@@ -32,7 +32,7 @@ p.sell-through-count {
 
 .pulse {
   width: auto;
-  animation: fade-in-and-out calc(var(--duration)*9) var(--ebay-standard-ease) infinite;
+  animation: fade-in-and-out calc(var(--duration)*7) var(--ebay-standard-ease) infinite;
 }
 
 p.red {
