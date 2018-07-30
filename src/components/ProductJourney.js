@@ -15,6 +15,7 @@ class ProductJourney extends Component {
   componentDidMount () {
     if(!this.animation) {
       this.animation = this.attachAnimation();
+      this.animation.setSpeed(1.25);
     }
   }
 
