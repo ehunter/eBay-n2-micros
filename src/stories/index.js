@@ -58,4 +58,4 @@ const options = {
    step: 1,
 };
 sellThroughBar.addDecorator(withKnobs);
-sellThroughBar.add('Sell Through Bar', () => <SellThroughBar itemsSold={number(label, defaultValue, options)}></SellThroughBar>);
+sellThroughBar.add('Sell Through Bar', () => <SellThroughBar itemsSold={number(label, defaultValue, options)} lowQuanityMax="90"></SellThroughBar>);

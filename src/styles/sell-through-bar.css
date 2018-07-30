@@ -31,6 +31,18 @@ p.sell-through-count {
 }
 
 .pulse {
-  background-color: var(--ebay-red);
+  width: auto;
   animation: fade-in-and-out calc(var(--duration)*9) var(--ebay-standard-ease) infinite;
+}
+
+p.red {
+  color: var(--ebay-red);
+}
+
+.red-bg {
+  background-color: var(--ebay-red);
+}
+
+.red-border {
+  border-color: var(--ebay-red);
 }
