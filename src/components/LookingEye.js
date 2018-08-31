@@ -19,6 +19,7 @@ class LookingEye extends Component {
   componentDidMount () {
     if(!this.animation) {
       this.animation = this.attachAnimation();
+      this.animation.setSpeed(1.2);
       //play the opening eye animation on first load, frames 0-30
       this.animation.playSegments(this.introFrames, true);
     }
