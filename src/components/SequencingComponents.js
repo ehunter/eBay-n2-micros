@@ -1,0 +1,45 @@
+import React, { Component } from 'react';
+import bodymovin from 'bodymovin';
+import animationData from '../assets/product-journey.json'
+
+import '../main.css';
+
+class SequencingComponents extends Component {
+  constructor(props) {
+    super(props);
+    this.animationIsAttached = false;
+    this.animation = null;
+  }
+
+
+  componentDidMount () {
+    if(!this.animation) {
+      this.animation = this.attachAnimation();
+      this.animation.setSpeed(1.25);
+    }
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <div style={{width: 560, height: 40}} ref={(animationDiv) => { this.animationContainer = animationDiv; }} />
+      </div>
+    );
+  }
+
+  attachAnimation = () => {
+    if (this.animationContainer !== undefined && !this.animationIsAttached) {
+      const animationProperties = {
+        container: this.animationContainer,
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        animationData: animationData
+      }
+
+      return bodymovin.loadAnimation(animationProperties);
+    }
+  }
+}
+
+export default SequencingComponents;

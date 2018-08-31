@@ -3,6 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import { withInfo } from '@storybook/addon-info';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 
 
@@ -16,10 +17,12 @@ import ShareCouponHint from '../components/ShareCouponHint';
 import TruckAnimation from '../components/TruckAnimation';
 import PlaneAnimation from '../components/PlaneAnimation';
 import ProductJourney from '../components/ProductJourney';
+import SequencingComponents from '../components/SequencingComponents';
 
-storiesOf('Badge', module)
-  .add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
-  .add('watching badge', () => <Badge theme="watching" value="50人正在浏览"></Badge>);
+const badgeStories = storiesOf('Badge', module);
+
+badgeStories.add('discount badge', () => <Badge theme="discount" value="4.5折"></Badge>)
+badgeStories.add('watching badge', () => <Badge theme="watching" value="50人正在浏览"></Badge>);
 
 storiesOf('Price Drop', module)
   .add('strike through', () => <PriceDrop initialPrice="￥1360" newPrice="￥1260"></PriceDrop>);
@@ -39,6 +42,9 @@ priceAlertBellStories.add('Price Alert Bell', () => <PriceAlertBell enabled={boo
 const ShareCouponStories = storiesOf('Share Coupon Hint', module);
 ShareCouponStories.addDecorator(withKnobs);
 ShareCouponStories.add('Share Coupon Hint', () => <ShareCouponHint showHint={boolean('Show Hint Animation', false)}></ShareCouponHint>);
+
+const SequencingComponentsStories = storiesOf('Sequencing Components', module);
+SequencingComponentsStories.add('Sequencing Components', () => <SequencingComponents></SequencingComponents>);
 
 
 /* These simple svg icons can be made much simpler by creating an animation component and passing properties (json file, speed, size, etc) */
