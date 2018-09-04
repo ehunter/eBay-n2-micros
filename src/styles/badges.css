@@ -3,10 +3,12 @@
   padding: 0 18px;
   width: auto;
   text-align: center;
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 33px;
+  left: 24px;
 }
 
 
@@ -27,16 +29,14 @@
 .discount {
   background-color: var(--ebay-yellow);
   transform-origin: left;
-  animation: scale-in-from-left var(--duration) var(--ebay-standard-ease) var(--delay) both;
+  animation: scale-in-from-left var(--duration) var(--ebay-standard-ease) both;
 }
 
 .discount:nth-child(2) {
-  animation-delay: calc(var(--delay)*2);
   z-index: 3;
   background-color: var(--ebay-light-blue);
 }
 .discount:nth-child(3) {
-  animation-delay: calc(var(--delay)*3);
   z-index: 4;
   background-color: var(--ebay-purple);
 }

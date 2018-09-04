@@ -7,6 +7,7 @@ import '../main.css';
 class Badge extends Component {
   constructor(props) {
     super(props);
+    this.defaultDelay = 135;
   }
   render() {
 
@@ -15,20 +16,24 @@ class Badge extends Component {
       'watching': this.props.theme == "watching"
     });
 
+
     return (
-      <div className="container">
         <div id="badge" className="badge">
             <p className="badge-label">{this.props.value}</p>
-            <div className={badgeBgClass}></div>
+            <div className={badgeBgClass} style={{animationDelay: this.calculateDelay(2)}}></div>
             {this.props.theme == "discount" &&
-              <div className={badgeBgClass}></div>
+              <div className={badgeBgClass} style={{animationDelay: this.calculateDelay(3)}}></div>
             }
             {this.props.theme == "discount" &&
-              <div className={badgeBgClass}></div>
+              <div className={badgeBgClass} style={{animationDelay: this.calculateDelay(1)}}></div>
             }
         </div> 
-      </div>
+
     );
+  }
+
+  calculateDelay = (order) => {
+      return (this.defaultDelay*order + this.props.animDelay) + 'ms';
   }
 }
 
