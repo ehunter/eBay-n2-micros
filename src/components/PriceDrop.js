@@ -9,6 +9,7 @@ class PriceDrop extends Component {
 
   constructor(props) {
     super(props);
+    this.defaultDelay = 135;
   }
 
   componentDidMount() {
@@ -25,21 +26,26 @@ class PriceDrop extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <div id="price-drop" className="price-drop">
-        <p className="price new" ref="newestPrice">{this.props.newPrice}</p>
-          <div id="initialPriceContainer">
+        <p className="price new" ref="newestPrice" style={{animationDelay: this.calculateDelay(5)}}>{this.props.newPrice}</p>
+          <div id="initialPriceContainer" style={{animationDelay: this.calculateDelay(5)}}>
             <p className="price initial">{this.props.initialPrice}</p>
             <div className="stripes">
-              <div className="stripe"></div>
-              <div className="stripe"></div>
-              <div className="stripe"></div>
-              <div className="stripe"></div>
+              <div className="stripe" style={{animationDelay: this.calculateDelay(1)}}></div>
+              <div className="stripe" style={{animationDelay: this.calculateDelay(2)}}></div>
+              <div className="stripe" style={{animationDelay: this.calculateDelay(3)}}></div>
+              <div className="stripe" style={{animationDelay: this.calculateDelay(4)}}></div>
             </div>
           </div>
           </div>
       </div>
     );
+  }
+
+  calculateDelay = (order) => {
+    var wait = this.props.animDelay ? this.props.animDelay : 0;
+    return ((this.defaultDelay*order) + wait) + 'ms';
   }
 }
 

@@ -4,13 +4,12 @@
 
 .price-drop {
   height: auto;
-  padding: 0 6px;
   width: auto;
-  text-align: center;
+  text-align: left;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .initial {
@@ -22,7 +21,7 @@
   position: absolute;
   margin: auto 5px;
   transform-origin: right;
-  animation: slide-to-right-and-scale-down calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*4.5) both;
+  animation: slide-to-right-and-scale-down calc(var(--duration)*1.25) var(--ebay-standard-ease) both;
 }
 
 .price {
@@ -31,7 +30,7 @@
 }
 
 .new {
-  animation: slide-and-fade-in-from-left calc(var(--duration)*1.5) var(--ebay-standard-ease) calc(var(--delay)*4.5) both;
+  animation: slide-and-fade-in-from-left calc(var(--duration)*1.25) var(--ebay-standard-ease) both;
 }
 
 .stripes {
@@ -47,24 +46,21 @@
   margin:auto;
   background-color: var(--ebay-yellow);
   transform-origin: left;
-  animation: scale-in-from-left var(--duration) var(--ebay-standard-ease) var(--delay) both;
+  animation: scale-in-from-left var(--duration) var(--ebay-standard-ease) both;
   z-index: 1;
 }
 
 .stripe:nth-child(2) {
-  animation-delay: calc(var(--delay)*2);
   z-index: 2;
   background-color: var(--ebay-blue);
 }
 
 .stripe:nth-child(3) {
-  animation-delay: calc(var(--delay)*3);
   z-index: 3;
   background-color: var(--ebay-yellow);
 }
 
 .stripe:nth-child(4) {
-  animation-delay: calc(var(--delay)*4);
   z-index: 4;
   background-color: var(--ebay-red);
 }
