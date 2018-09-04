@@ -33,7 +33,8 @@ class Badge extends Component {
   }
 
   calculateDelay = (order) => {
-      return (this.defaultDelay*order + this.props.animDelay) + 'ms';
+    var wait = this.props.animDelay ? this.props.animDelay : 0;
+    return ((this.defaultDelay*order) + wait) + 'ms';
   }
 }
 

@@ -22,30 +22,62 @@ class SequencingComponents extends Component {
             <div className="image-container"><img src={image1} /></div>
             <div className="item-tile-details-container">
               <h5><strong className="bold-text-2">苹果(Apple MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
-              <div><strong className="bold-text">¥2,865.71</strong><a href="javascript:void(0)"><br /></a></div>
+              <div>
+              <strong className="bold-text">¥2,865.71</strong></div>
             </div>
           </div>
           <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
             <div className="image-container"><img src={image2} /></div>
             <div className="item-tile-details-container">
               <h5><strong className="bold-text-2">Ray-Ban 中性镜像 Erika RB4171-601/55-54</strong></h5>
-              <div><strong className="bold-text">¥2,865.71</strong><a href="javascript:void(0)"><br /></a></div>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
             </div>
           </div>
           <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
-            <Badge theme="discount" value="6.5折" animDelay={700}></Badge>
+            <Badge theme="discount" value="6.5折" animDelay={600}></Badge>
             <div className="image-container"><img src={image3} /></div>
             <div className="item-tile-details-container">
               <h5><strong className="bold-text-2">苹果(Apple) MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
-              <div><strong className="bold-text">¥2,865.71</strong><a href="javascript:void(0)"><br /></a></div>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
             </div>
           </div>
           <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
-          <Badge theme="discount" value="6.5折" animDelay={1050}></Badge>
             <div className="image-container"><img src={image4} /></div>
             <div className="item-tile-details-container">
               <h5><strong className="bold-text-2">苹果(Apple) MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
-              <div><strong className="bold-text">¥2,865.71</strong><a href="javascript:void(0)"><br /></a></div>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
+            </div>
+          </div>
+        </div>
+        <div className="row w-row">
+          <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+            <div className="image-container"><img src={image1} /></div>
+            <div className="item-tile-details-container">
+              <h5><strong className="bold-text-2">苹果(Apple MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
+            </div>
+          </div>
+          <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+            <Badge theme="discount" value="4.5折" animDelay={850}></Badge>
+            <div className="image-container"><img src={image2} /></div>
+            <div className="item-tile-details-container">
+              <h5><strong className="bold-text-2">Ray-Ban 中性镜像 Erika RB4171-601/55-54</strong></h5>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
+            </div>
+          </div>
+          <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+            <div className="image-container"><img src={image3} /></div>
+            <div className="item-tile-details-container">
+              <h5><strong className="bold-text-2">苹果(Apple) MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
+            </div>
+          </div>
+          <div className="item-column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+            <Badge theme="discount" value="6.5折" animDelay={1100}></Badge>
+            <div className="image-container"><img src={image4} /></div>
+            <div className="item-tile-details-container">
+              <h5><strong className="bold-text-2">苹果(Apple) MacBook Air 11.6&quot; 笔记本电脑英特尔(Intel)</strong></h5>
+              <div><strong className="bold-text">¥2,865.71</strong></div>
             </div>
           </div>
         </div>

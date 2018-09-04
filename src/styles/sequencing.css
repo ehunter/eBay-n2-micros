@@ -302,3 +302,8 @@ img {
 .bold-text-2 {
   text-transform: uppercase;
 }
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}

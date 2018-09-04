@@ -43,9 +43,6 @@ const ShareCouponStories = storiesOf('Share Coupon Hint', module);
 ShareCouponStories.addDecorator(withKnobs);
 ShareCouponStories.add('Share Coupon Hint', () => <ShareCouponHint showHint={boolean('Show Hint Animation', false)}></ShareCouponHint>);
 
-const SequencingComponentsStories = storiesOf('Sequencing Components', module);
-SequencingComponentsStories.add('Sequencing Components', () => <SequencingComponents></SequencingComponents>);
-
 
 /* These simple svg icons can be made much simpler by creating an animation component and passing properties (json file, speed, size, etc) */
 const ShippingStories = storiesOf('Shipping Icon Animations', module);
@@ -65,3 +62,6 @@ const options = {
 };
 sellThroughBar.addDecorator(withKnobs);
 sellThroughBar.add('Sell Through Bar', () => <SellThroughBar itemsSold={number(label, defaultValue, options)} lowQuanityMax="90"></SellThroughBar>);
+
+const SequencingComponentsStories = storiesOf('Sequencing Components', module);
+SequencingComponentsStories.add('Sequencing Discount Badges', () => <SequencingComponents></SequencingComponents>);
