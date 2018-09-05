@@ -64,16 +64,6 @@ sellThroughBar.addDecorator(withKnobs);
 sellThroughBar.add('Sell Through Bar', () => <SellThroughBar itemsSold={number(label, defaultValue, options)} lowQuanityMax="90"></SellThroughBar>);
 
 const SequencingComponentsStories = storiesOf('Sequencing the components', module);
-SequencingComponentsStories.add('Home Page', 
-	withInfo({
-		inline: true,
-		propTables: false,
-		source: false,
-      	text: `
-      	### Timing Recommendations
-Tile 1 | Tile 2 | Tile 3  |  Tile 4 |
------- | ------ | ------  | ------
-Still | renders | nicely | nicely |
-1 | 2 | 3 | 4 |
-        `,
-    })(() => <SequencingComponents></SequencingComponents>));
+SequencingComponentsStories.add('Home Page', () => <SequencingComponents></SequencingComponents>);
+
+
