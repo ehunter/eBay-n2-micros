@@ -11,8 +11,8 @@ class ShareCouponHint extends Component {
     super(props);
     this.animationIsAttached = false;
     this.animation = null;
-    this.showHintFrames = [0, 61];
-    this.hideHintFrames = [62, 96];
+    this.showHintFrames = [0, 41];
+    this.hideHintFrames = [42, 88];
   }
 
 
